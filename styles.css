@@ -1,0 +1,222 @@
+body{
+    
+
+}
+#top{
+    
+
+}
+#top_header{
+    background: aqua;
+    color: dimgray;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;   
+}
+h1{
+    
+}
+#logo{
+
+}
+button {
+    background-color:#0000FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+	text-align:center;
+    margin-left:90px;
+    border-radius: 10px;
+}
+#main{
+    border: solid aqua thin;
+    margin: 10px;
+    border-left: 3px solid black;
+}
+/* form display */
+#form1{
+    border: 1px black;
+    border-width: thick;
+    width:100%;
+    height:100%;
+    opacity:.95;
+    top:0;
+    left:0;
+    display:none;
+    position:fixed;
+    background-color:#313131;
+    overflow:auto
+}
+img#close {
+    position:absolute;
+    right:-14px;
+    top:-14px;
+    cursor:pointer
+}
+div#popupContact {
+    position:absolute;
+    left:50%;
+    top:17%;
+    margin-left:-202px;
+    font-family:'Raleway',sans-serif
+}
+form {
+    max-width:300px;
+    min-width:250px;
+    padding:10px 50px;
+    border:2px solid gray;
+    border-radius:10px;
+    font-family:raleway;
+    background-color:#fff
+}
+input[type=text] {
+    width:82%;
+    padding:10px;
+    margin-top:30px;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway
+}
+#name {
+    background-repeat:no-repeat;
+    background-position:5px 7px
+}
+#email {
+    background-repeat:no-repeat;
+    background-position:5px 7px
+}
+textarea {
+    
+    background-repeat:no-repeat;
+    background-position:5px 7px;
+    width:82%;
+    height:95px;
+    padding:10px;
+    resize:none;
+    margin-top:30px;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway;
+    margin-bottom:30px
+}
+#submit {
+    text-decoration:none;
+    width:75%;
+    text-align:center;
+    display:block;
+    background-color:blue;
+    cursor:pointer;
+    border-radius:5px
+}
+span {
+    color:red;
+    font-weight:700
+}
+/* end of form*/
+#button1{
+    width: 80px;
+    border-radius: 10px; 
+    
+}
+#b1{
+    border: 1px ;
+    margin-left: 1100px;
+}
+/*beginning of navbar*/
+#navbar{
+    width: 100%;
+    height:  48px;
+    margin: 0 auto;
+    background: blue;
+    color: white;  
+}
+#navbar ul{
+    float: left;
+	width: 930px;
+	margin: 0;
+	padding: 6px 0 0 0;
+    list-style: none;   
+}
+
+#navbar ul li{
+    display:inline;
+}
+#navbar ul li a{
+    float: left;
+	width: 110px;
+	padding: 5px 0;
+	margin-right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color:#FFFFFF;
+	border-right: 1px solid #4c4a3c;
+}
+#navbar li a:hover, #nav li .current {
+	color:#FF0000;
+}
+/*end of navbar*/
+
+/*------main2---------*/
+
+/*notification*/
+#notifications{
+    border: solid thin aqua;
+    width:28.7%;
+    height:500px;
+    margin:10px;
+    float:left;
+    color:black;
+       
+}
+h2{
+    border: 1px solid black;
+    background: #0000FF;
+    width: 100%;
+    margin: 0%;
+    
+}
+/*end of notifications*/
+
+/*content*/
+#content{
+    float: right;
+    width: 68%;
+   height:700px;
+    border: aqua solid thin;
+    color:#000000;
+    top:20%;
+    margin: 10px;
+    top: 0px;
+    border-radius:10px 
+    
+}
+h3{
+    border: 1px solid black;
+    background: #0000FF;
+    margin: 0%;
+}
+
+/*end of content*/
+
+/* Table */
+table{
+    border: solid lightgray thin;
+    padding: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

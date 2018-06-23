@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Users</title>
+        <link rel="stylesheet" href="styles.css">
+
+        
+    </head>
+    <body>
+        <div id="top">
+            <header id="top_header">
+                <img id="logo" src="image.jpg" WIDTH=138 HEIGHT=137>
+                <h1>Mantainance Tracker App</h1>
+                <div id="b1">
+                    <button id="button1">Logout</button>
+                </div>
+          </header>
+            <h1>Welcome to your requests</h1>
+            <p>You can view all requests made by you here</p>
+            <button onClick="myRequest()">New Request</button>
+            
+
+            
+            <div id="form1" style="overflow:hidden;">
+                <!-- Popup Div Starts Here -->
+                <div id="popupContact">
+                    <!-- Contact Us Form -->
+                    <form action="#" id="form" method="post" name="form">
+                            <img id="close" src="Cancel-128.png" onclick ="div_hide()">
+                        <input id="name" name="name" placeholder="Name" type="text">
+                        <input id="email" name="email" placeholder="Email" type="text">
+                        <textarea id="msg" name="message" placeholder="Message"></textarea>
+                        <button id="submit" onClick="check_empty()">Send</button>
+                    </form>
+                </div>
+                <!-- Popup Div Ends Here -->
+            </div>
+                
+                
+
+                
+            
+        </div>
+        <div id="main">
+            <table style="width:100%">
+                <tr>
+                    
+                    <th></th>
+                    <th><input type="checkbox"></th>
+                    <th>Sheila</th>
+                    <th>Jun 20</th>
+                    
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><input type="checkbox"></th>
+                    <th>Hasfa</th>
+                    <th>Jun 20</th>
+                </tr>
+                <tr>
+                        <th></th>
+                        <th><input type="checkbox"></th>
+                        <th>Vera</ath>
+                        <th>Jun 20</th>
+                </tr>
+                <tr>
+                        <th></th>
+                        <th><input type="checkbox"></th>
+                        <th>Deen</ath>
+                        <th>Jun 21</th>
+                </tr>
+                <tr>
+                        <th></th>
+                        <th><input type="checkbox"></th>
+                        <th>Theta</ath>
+                        <th>Jun 21</th>
+                </tr>
+            </table>
+
+
+        </div>
+        <script>
+            function myRequest(){
+                document.getElementById('form1').style.display="block";       
+            }
+            function check_empty() {
+              if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+alert("Fill All Fields !");
+} else {
+                document.getElementById('form').submit();
+                alert("Form Submitted Successfully...");
+                }
+            }
+//Function to Hide Popup
+            function div_hide(){
+                document.getElementById('form1').style.display = "none";
+            }        
+            
+        </script>
+    </body>
+</html>
