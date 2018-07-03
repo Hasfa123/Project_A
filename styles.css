@@ -1,19 +1,22 @@
 body{
-    
-
+    background-color:#eaeaea;
 }
 #top{
-    
-
+    text-align: center;
+}
+#users_h{
+    text-align: center;
 }
 #top_header{
-    background: aqua;
-    color: dimgray;
+    /*background: aqua;*/
+    
     padding: 10px;
     font-size: 16px;
-    border: 1px solid black;   
+    /*border: 1px solid black;   */
 }
 h1{
+    text-align: left;
+    font-size: 30px;
     
 }
 #logo{
@@ -32,9 +35,10 @@ button {
     border-radius: 10px;
 }
 #main{
-    border: solid aqua thin;
+    width: 50%;
+    top: 0;
     margin: 10px;
-    border-left: 3px solid black;
+    background-color: white;
 }
 /* form display */
 #form1{
@@ -54,56 +58,41 @@ img#close {
     position:absolute;
     right:-14px;
     top:-14px;
+    width: 50px;
     cursor:pointer
 }
 div#popupContact {
     position:absolute;
     left:50%;
-    top:17%;
+    top:10%;
     margin-left:-202px;
-    font-family:'Raleway',sans-serif
+    font-family:'Raleway',sans-serif;
+    
 }
 form {
+    height: fit-content;
     max-width:300px;
     min-width:250px;
     padding:10px 50px;
     border:2px solid gray;
     border-radius:10px;
     font-family:raleway;
-    background-color:#fff
+    background-color: lightblue;
+    
+    
 }
 input[type=text] {
     width:82%;
     padding:10px;
-    margin-top:30px;
-    border:1px solid #ccc;
-    padding-left:40px;
-    font-size:16px;
-    font-family:raleway
-}
-#name {
-    background-repeat:no-repeat;
-    background-position:5px 7px
-}
-#email {
-    background-repeat:no-repeat;
-    background-position:5px 7px
-}
-textarea {
-    
-    background-repeat:no-repeat;
-    background-position:5px 7px;
-    width:82%;
-    height:95px;
-    padding:10px;
-    resize:none;
-    margin-top:30px;
+    /*margin-top:30px;*/
     border:1px solid #ccc;
     padding-left:40px;
     font-size:16px;
     font-family:raleway;
-    margin-bottom:30px
+    height: 8%;
 }
+
+
 #submit {
     text-decoration:none;
     width:75%;
@@ -167,41 +156,89 @@ span {
 
 /*notification*/
 #notifications{
-    border: solid thin aqua;
-    width:28.7%;
-    height:500px;
-    margin:10px;
+    background-color: white;
+    width:50%;
+    padding: 0 10px;
     float:left;
-    color:black;
-       
+    color:black;    
+    scroll-behavior: auto; 
 }
 h2{
-    border: 1px solid black;
-    background: #0000FF;
-    width: 100%;
-    margin: 0%;
-    
+    /*background: #0000FF;*/
+    width: 100%;   
 }
+#notify{
+    
+	display: inline-block;
+	padding: 8px 0;
+	width: 100%;
+}
+#notify li:hover{
+    background: #f2f2f2;
+    cursor:pointer;
+}
+#notify li{
+	width: 95%;
+    float: left;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+#notify p {
+	font-size: 13px;
+}
+
+#notifications p > muted {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #666666
+}
+
 /*end of notifications*/
 
 /*content*/
 #content{
+    background-color: white;
     float: right;
-    width: 68%;
-   height:700px;
-    border: aqua solid thin;
+    width: 46%;
+    height:500px;
     color:#000000;
-    top:20%;
-    margin: 10px;
-    top: 0px;
-    border-radius:10px 
-    
+    display: none;
+    top: 0;
+}
+#b2{
+    width: 12%;
+    float: right;
 }
 h3{
-    border: 1px solid black;
     background: #0000FF;
-    margin: 0%;
+    width: 100%; 
 }
+#back1{
+    width: 100%;
+    height: 10%;
+}
+img#back {
+    float: left;
+    right:-18px;
+    top:-14px;
+    cursor:pointer;
+    width: 80px;
+    color: #0000FF;
+}
+#msg1{
+    height: 70%;
+}
+#approve, #reject{
+    width: 15%;
+    height: 8%;
+    text-align: center;
+    top: 20;
+}
+#buttons{
+    text-align: center;
+}
+
 
 /*end of content*/
 
@@ -220,3 +257,118 @@ td, th{
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+/*------Home-----------*/
+#nav1{
+    padding: 20px;
+    transition: all 0.8s;
+    background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+.container{
+    height: 30%;
+}
+#nav1 #navbar-header{
+    float: left;
+	font-size: 20px;
+	color: blue;
+	font-weight: 500;
+    text-transform: uppercase;
+    width: 40%;
+    height: 8%;
+    top: 0;   
+}
+#navbar-right{
+    width: 55%;
+    float: right;
+    top: 0;
+    color:white;
+}
+#navbar-right ul{
+    float: right;
+	width: 700px;
+	margin: 0;
+	padding: 0 0 0 6px;
+    list-style: none;   
+}
+
+#navbar-right ul li{
+    display:inline;
+    
+}
+#navbar-right ul li a {
+    float: right;
+	width: 110px;
+	padding: 0 5px;
+	margin-left: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+    color: white;
+	border-right: 1px solid #4c4a3c;
+}
+
+#navbar-right ul li .active{
+    
+	color: #444;
+	
+} 
+#navbar-right li a:hover{
+    color: #0ba2db;
+}
+#navbar-right > .active > a, #navbar-right > .active > a:hover, #navbar-right > .active > a:focus {
+	color: #0ba2db !important;
+	background-color: transparent;
+}
+.about2{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+#header-about{
+    text-align: center;
+    font-size: 50px;
+}
+#body1{
+    background: lightgrey;
+    opacity: 50;
+    
+}
+/*----------Dropdown-----*/
+.dropdown {
+    position: relative;
+    display:inline-block;
+    overflow: hidden;
+  }
+  .dropdown-content{
+      display: none;
+      position: absolute;
+      background-color: #0000FF;
+      min-width: 160%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+  }
+  .dropdown-content a{
+      float: none;
+
+      color: white;
+      padding: 12px 16px;   
+      display: block;
+  }
+  .dropdown:hover .dropdown-content{
+      display: block;
+  }
+  /*--------Searchbar-----------*/
+  #search{
+      float: left;
+      display: none;
+      width: 50%;
+      margin: 0;
+      padding: 14px;
+      border: 1px solid thin;
+      overflow: auto;
+  }
+  
