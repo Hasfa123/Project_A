@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>Mantainance Tracker App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+	<h1 style="text-decoration: underline;">Create A New Account</h1>
+	<h2>Please enter your details below</h2>
+	<div class="container">
+	 	<form action=" " method="POST" nonvalidate>
+		    <label for="user_name"><b>Username</b></label>
+			<input type="text" placeholder="Enter username" name="user_name" required />
+			
+			<label for="email"><b>E-mail</b></label>
+			<input type="email" placeholder="Enter E-mail Here" name="email" required/>
+			
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required/>
+			
+			<label for="password"><b>Confirm Password</b></label>
+			<input type="password" placeholder="Confirm Password" name="password" required/>
+			
+			<button type="submit">Sign-Up</button>
+		</form>
+	</div>	
+</body>
+</html>

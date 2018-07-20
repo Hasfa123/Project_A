@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Users</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script src="{{ url_for('static', filename='myjs.js') }}"></script>
+
+        
+    </head>
+    <body id="body1">
+        
+            <header id="top_header">
+                
+                <h1>Mantainance Tracker App</h1>
+                <div id="b1">
+                    <button id="button1">Logout</button>
+                </div>
+          </header>
+          <div id="top">
+            <h1 id="users_h">Welcome to your requests</h1>
+            <p>You can view all requests made by you here</p>
+            <button onClick="myRequest()">New Request</button>
+            
+
+            
+            <div id="form1" style="overflow:hidden;">
+                <!-- Popup Div Starts Here -->
+                <div id="popupContact">
+                    <!-- Contact Us Form -->
+                    <form action="#" id="form" method="post" name="form">
+                        <h1>Request Form</h1>
+                        <img id="close" src="{{ url_for('static', filename='images/Cancel-128.png') }}" onclick ="div_hide()">
+                        <p><label>Name:</label></br><input id="name" name="name" placeholder="Name" type="text"></p>
+                        <p><label>E-mail:</label></br><input id="email" name="email" placeholder="Email" type="text"></p>
+                        <p><label>Request Type:</label>
+                            <select name="option">
+                                <option selected>Maintenance</option>
+                                <option>Repairs</option>
+                            </select>
+                        </p>
+                        <p><label>Message:</label></br><textarea id="msg" name="message" placeholder="Message"></textarea></p>
+                        <button id="submit" onClick="check_empty()">Send</button>
+                    </form>
+                </div>
+                <!-- Popup Div Ends Here -->
+            </div>
+                
+                
+
+                
+            
+        </div>
+        <div id="navbar">
+                <ul>
+                    <li><a href="#notifications">All Requests</a></li>
+                    <li><a href="#">Approved</a></li>
+                    <li><a href="#">Maintenance</a></li>    
+                    <li class="dropdown">
+                            <a href="#">Month</a>
+                            <ul class="dropdown-content">
+                                <a href="#">January</a>
+                                <a href="#">February</a>
+                                <a href="#">March</a>
+                                <a href="#">April</a>
+                                <a href="#">May</a>
+                                <a href="#">June</a>
+                                <a href="#">July</a>
+                                <a href="#">August</a>
+                                <a href="#">September</a>
+                                <a href="#">October</a>
+                                <a href="#">November</a>
+                                <a href="#">December</a>
+                            </ul>
+                        </li>
+                    <li><a href="#">Rejected</a></li>
+                    <li><a href="#">Repairs</a></li>   
+                </ul>
+            </div>
+        <div id="main">
+            <h2>Requests</h2>
+            <ul id="notify" onclick="myContent()">
+                    <li>
+                        <p><muted>4 Minutes Ago</muted><br/>
+                             You Made a Mantainance request. Approved &ensp; Rejected
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>4 Minutes Ago</muted><br/>
+                            You Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>5 Minutes Ago</muted><br/>
+                            You Made a Repairs request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            You Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            You Made a Repairs request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            You Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                </ul>
+
+
+        </div>
+        <div id="content">
+                <div id="back1">
+                    <img id="back" src="images.png" onclick ="div_hide1()">
+                </div>
+                <div id="msg1">
+                    <p><h4>Repairs request from James</h4></p>
+                    <p>My pc has broken down in office L40</p>
+                </div>
+    
+                <div id="buttons">
+                    <button id="approve" onclick="">Approve</button>
+                    <button id="reject" onclick="">Reject</button>
+                </div>  
+        </div>
+        
+    </body>
+</html>

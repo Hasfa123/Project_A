@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script src="myjs.js"></script>
+    </head>
+    <body id="body1">
+        <div id="top_header">
+            <h1>Mantainance Tracker App</h1>
+            <div id="b1">
+                <button id="button1">Logout</button>
+            </div>
+        </div>
+        </div>
+        
+        <div id="navbar">
+            <ul>
+                <li><a href="#notifications">All Requests</a></li>
+                <li><a href="#">Approved</a></li>
+                <li><a href="#">Maintenance</a></li>    
+                <li class="dropdown">
+                        <a href="#">Month</a>
+                        <ul class="dropdown-content">
+                            <a href="#">January</a>
+                            <a href="#">February</a>
+                            <a href="#">March</a>
+                            <a href="#">April</a>
+                            <a href="#">May</a>
+                            <a href="#">June</a>
+                            <a href="#">July</a>
+                            <a href="#">August</a>
+                            <a href="#">September</a>
+                            <a href="#">October</a>
+                            <a href="#">November</a>
+                            <a href="#">December</a>
+                        </ul>
+                    </li>
+                <li onclick="mySearch()"><a href="#search">Name</a></li>
+                <li><a href="#">Rejected</a></li>
+                <li><a href="#">Repairs</a></li>   
+            </ul>
+        </div>
+        <div id="search1">
+            <input type="text" id="search" placeholder="Search for Name here..." onkeyup="myFunction()">
+            <img id="close" src="Cancel-128.png" onclick ="div_hide()">
+        </div>       
+        
+            <div id="notifications">
+            
+                <h2>Requests</h2>
+                <ul id="notify" onclick="myContent()">
+                    <li>
+                        <p><muted>4 Minutes Ago</muted><br/>
+                            <a href="#">James</a> Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>4 Minutes Ago</muted><br/>
+                            <a href="#">James Brown</a> Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>5 Minutes Ago</muted><br/>
+                            <a href="#">James</a> Made a Repairs request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            <a href="#">True</a> Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            <a href="#">Hasfa</a> Made a Repairs request.<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <p><muted>8 Minutes Ago</muted><br/>
+                            <a href="#">Brown</a> Made a Mantainance request.<br/>
+                        </p>
+                    </li>
+                </ul>
+    
+            </div>
+
+        <div id="content">
+            <div id="back1">
+                <img id="back" src="images.png" onclick ="div_hide1()">
+            </div>
+            <div id="msg1">
+                <p><h4>Repairs request from James</h4></p>
+                <p>My pc has broken down in office L40</p>
+            </div>
+
+            <div id="buttons">
+                <button id="approve" onclick="">Approve</button>
+                <button id="reject" onclick="">Reject</button>
+            </div>  
+        </div>
+        
+        
+            
+    
+    
+        
+        
+    </body>
+</html>
