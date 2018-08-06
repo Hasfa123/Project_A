@@ -30,14 +30,14 @@
                         <h1>Request Form</h1>
                         <img id="close" src="{{ url_for('static', filename='images/Cancel-128.png') }}" onclick ="div_hide()">
                         <p><label>Name:</label></br><input id="name" name="name" placeholder="Name" type="text"></p>
-                        <p><label>E-mail:</label></br><input id="email" name="email" placeholder="Email" type="text"></p>
+                        <p><label>Department:</label></br><input id="department" name="department" placeholder="Department" type="text"></p>
                         <p><label>Request Type:</label>
                             <select name="option">
                                 <option selected>Maintenance</option>
                                 <option>Repairs</option>
                             </select>
                         </p>
-                        <p><label>Message:</label></br><textarea id="msg" name="message" placeholder="Message"></textarea></p>
+                        <p><label>Message:</label></br><textarea id="message" name="message" placeholder="Message"></textarea></p>
                         <button id="submit" onClick="check_empty()">Send</button>
                     </form>
                 </div>

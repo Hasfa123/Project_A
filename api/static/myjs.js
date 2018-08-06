@@ -2,7 +2,7 @@ function myRequest(){
     document.getElementById('form1').style.display="block";       
 }
 function check_empty() {
-  if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+  if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('message').value == "") {
         alert("Fill All Fields !");
     } else {
     document.getElementById('form').submit();
@@ -48,3 +48,13 @@ function myFunction(){
     }
 
 }
+
+
+/*make new request form*/
+
+
+
+
+
+
+
